@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,22 +12,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHk-rd-YC9">
-                                <rect key="frame" x="100" y="150" width="214" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHk-rd-YC9">
+                                <rect key="frame" x="64.5" y="150" width="191" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0r-wo-X02">
-                                <rect key="frame" x="100" y="251" width="214" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0r-wo-X02">
+                                <rect key="frame" x="85" y="251" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="PFs-ix-xYv"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-GA-NZy">
-                                <rect key="frame" x="100" y="335" width="214" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-GA-NZy">
+                                <rect key="frame" x="137" y="335" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="GaJ-6Y-RBF" kind="show" id="yPf-dP-4bc"/>
@@ -36,17 +39,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="o52-GA-NZy" firstAttribute="top" secondItem="x0r-wo-X02" secondAttribute="bottom" constant="50" id="0Lh-BD-DSW"/>
-                            <constraint firstItem="x0r-wo-X02" firstAttribute="top" secondItem="WHk-rd-YC9" secondAttribute="bottom" constant="80" id="7Oy-ng-jC8"/>
-                            <constraint firstItem="WHk-rd-YC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="9ml-jm-0fW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o52-GA-NZy" secondAttribute="trailing" constant="100" id="S8J-PT-FP5"/>
-                            <constraint firstItem="WHk-rd-YC9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="aHs-Gl-1DZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x0r-wo-X02" secondAttribute="trailing" constant="100" id="aeJ-Lj-Y7n"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WHk-rd-YC9" secondAttribute="trailing" constant="100" id="d4G-yp-I7O"/>
-                            <constraint firstItem="WHk-rd-YC9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="feL-36-3lM"/>
-                            <constraint firstItem="o52-GA-NZy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="kYO-k3-0PO"/>
-                            <constraint firstItem="WHk-rd-YC9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="wOQ-bd-tOk"/>
-                            <constraint firstItem="x0r-wo-X02" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="wjh-lQ-Zx9"/>
+                            <constraint firstItem="WHk-rd-YC9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FZG-t2-cfd"/>
+                            <constraint firstItem="o52-GA-NZy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XmC-MB-s45"/>
+                            <constraint firstItem="x0r-wo-X02" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qmG-f1-0oa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,36 +51,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="192.75362318840581" y="-129.24107142857142"/>
+            <point key="canvasLocation" x="191.25" y="-129.92957746478874"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="cdv-jx-jbu">
             <objects>
                 <viewController id="GaJ-6Y-RBF" customClass="ResultViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JOT-vN-Psb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-Zh-ZQh">
+                                <rect key="frame" x="139" y="347.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlo-u9-3iV">
-                                <rect key="frame" x="150" y="371" width="114" height="30"/>
+                                <rect key="frame" x="137" y="207" width="46" height="70"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="B6g-IH-QLa" kind="unwind" unwindAction="unwind:" id="e2e-hX-v9o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-Zh-ZQh">
-                                <rect key="frame" x="150" y="150" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="uVV-Zh-ZQh" firstAttribute="leading" secondItem="efj-3G-Zny" secondAttribute="leading" constant="150" id="19H-dt-WxR"/>
-                            <constraint firstItem="efj-3G-Zny" firstAttribute="trailing" secondItem="uVV-Zh-ZQh" secondAttribute="trailing" constant="150" id="QH2-UL-reQ"/>
-                            <constraint firstItem="efj-3G-Zny" firstAttribute="trailing" secondItem="Rlo-u9-3iV" secondAttribute="trailing" constant="150" id="fkR-Ga-qS8"/>
-                            <constraint firstItem="Rlo-u9-3iV" firstAttribute="leading" secondItem="efj-3G-Zny" secondAttribute="leading" constant="150" id="k07-p8-jNK"/>
+                            <constraint firstItem="Rlo-u9-3iV" firstAttribute="centerX" secondItem="JOT-vN-Psb" secondAttribute="centerX" id="Sp7-Pq-fZz"/>
+                            <constraint firstItem="uVV-Zh-ZQh" firstAttribute="centerX" secondItem="JOT-vN-Psb" secondAttribute="centerX" id="TDN-Sx-hUH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="efj-3G-Zny"/>
                     </view>
@@ -97,7 +90,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wi-6H-eJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="B6g-IH-QLa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="802.34375" y="-130.078125"/>
+            <point key="canvasLocation" x="801.44927536231887" y="-130.43478260869566"/>
         </scene>
     </scenes>
 </document>
