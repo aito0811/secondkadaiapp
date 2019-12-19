@@ -25,7 +25,6 @@ class ResultViewController: UIViewController {
         // 上記では、x, y を 0 と宣言していたが、
         // 1画面目のViewControllerから遷移するときにprepareForSegueで
         // x, yの値を新たに代入されたので両方共 1 が入っている
-        let result = name
-        label.text = "こんにちは \(result) さん"
+        label.text = "こんにちは、 \(name) さん"
     }
 }

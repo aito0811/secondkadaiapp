@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,22 +12,22 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHk-rd-YC9">
-                                <rect key="frame" x="100" y="194" width="214" height="21"/>
+                                <rect key="frame" x="100" y="150" width="214" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x0r-wo-X02">
-                                <rect key="frame" x="100" y="295" width="214" height="34"/>
+                                <rect key="frame" x="100" y="251" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o52-GA-NZy">
-                                <rect key="frame" x="100" y="379" width="214" height="30"/>
+                                <rect key="frame" x="100" y="335" width="214" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="GaJ-6Y-RBF" kind="show" id="yPf-dP-4bc"/>
@@ -63,22 +63,18 @@
             <objects>
                 <viewController id="GaJ-6Y-RBF" customClass="ResultViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JOT-vN-Psb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlo-u9-3iV">
-                                <rect key="frame" x="100" y="351" width="214" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlo-u9-3iV">
+                                <rect key="frame" x="150" y="371" width="114" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="B6g-IH-QLa" kind="unwind" unwindAction="unwind:" id="e2e-hX-v9o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-Zh-ZQh">
-                                <rect key="frame" x="100" y="150" width="214" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="3AK-zq-Qp1"/>
-                                    <constraint firstAttribute="height" constant="21" id="h1s-Qs-pNv"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVV-Zh-ZQh">
+                                <rect key="frame" x="150" y="150" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -86,15 +82,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Rlo-u9-3iV" firstAttribute="leading" secondItem="efj-3G-Zny" secondAttribute="leading" constant="100" id="2LB-1P-eC8"/>
-                            <constraint firstItem="efj-3G-Zny" firstAttribute="trailing" secondItem="uVV-Zh-ZQh" secondAttribute="trailing" constant="100" id="8zp-9q-Mv7"/>
-                            <constraint firstItem="Rlo-u9-3iV" firstAttribute="top" secondItem="uVV-Zh-ZQh" secondAttribute="bottom" constant="180" id="968-bS-p0M"/>
-                            <constraint firstItem="efj-3G-Zny" firstAttribute="trailing" secondItem="uVV-Zh-ZQh" secondAttribute="trailing" constant="100" id="AQM-dA-LBD"/>
-                            <constraint firstItem="uVV-Zh-ZQh" firstAttribute="leading" secondItem="efj-3G-Zny" secondAttribute="leading" constant="100" id="Kts-tf-NBO"/>
-                            <constraint firstItem="efj-3G-Zny" firstAttribute="trailing" secondItem="Rlo-u9-3iV" secondAttribute="trailing" constant="100" id="bEn-Zg-goq"/>
-                            <constraint firstItem="uVV-Zh-ZQh" firstAttribute="top" secondItem="efj-3G-Zny" secondAttribute="top" constant="150" id="jrK-mp-wbR"/>
-                            <constraint firstItem="efj-3G-Zny" firstAttribute="trailing" secondItem="uVV-Zh-ZQh" secondAttribute="trailing" constant="100" id="pdf-jR-SJB"/>
-                            <constraint firstItem="uVV-Zh-ZQh" firstAttribute="leading" secondItem="efj-3G-Zny" secondAttribute="leading" constant="100" id="yNJ-k1-oFt"/>
+                            <constraint firstItem="uVV-Zh-ZQh" firstAttribute="leading" secondItem="efj-3G-Zny" secondAttribute="leading" constant="150" id="19H-dt-WxR"/>
+                            <constraint firstItem="efj-3G-Zny" firstAttribute="trailing" secondItem="uVV-Zh-ZQh" secondAttribute="trailing" constant="150" id="QH2-UL-reQ"/>
+                            <constraint firstItem="efj-3G-Zny" firstAttribute="trailing" secondItem="Rlo-u9-3iV" secondAttribute="trailing" constant="150" id="fkR-Ga-qS8"/>
+                            <constraint firstItem="Rlo-u9-3iV" firstAttribute="leading" secondItem="efj-3G-Zny" secondAttribute="leading" constant="150" id="k07-p8-jNK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="efj-3G-Zny"/>
                     </view>
@@ -106,7 +97,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4wi-6H-eJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="B6g-IH-QLa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="802.89855072463774" y="-129.24107142857142"/>
+            <point key="canvasLocation" x="802.34375" y="-130.078125"/>
         </scene>
     </scenes>
 </document>
